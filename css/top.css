@@ -1,0 +1,201 @@
+html{
+  font-size: 62.5%;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  transition: .3s all;
+  outline: none;
+  border: none;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  letter-spacing: .1rem;
+}
+
+body{
+  max-height: unset !important;
+  overflow: auto !important;
+  overflow-x: hidden !important;
+  position: unset !important;
+  background-color: #f0f2f5 !important;
+}
+
+.dnone{
+  display: none !important;
+}
+
+.dnull{
+  display: unset !important;
+}
+
+tt{
+  font-size: 2rem;
+  color: #333;
+  font-style: italic;
+}
+
+ul, ol{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: #333 !important;
+  text-align: left;
+}
+
+.head-el{
+  background-color: #fff;
+  border-bottom: .1rem solid #eee;
+  padding: .8rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 9999999999;
+}
+
+.head-el,
+.navbar-el{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.navbar-el{
+  background-color: #003463;
+}
+
+header{
+  max-width: 120rem;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .home-hd{
+  display: block;
+  margin-right: 3rem;
+  width: 9.6rem;
+  height: 4.8rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+header .home-hd .logo{
+  width: 100%;
+  height: 100%;
+}
+
+header .home-hd .logo:hover{
+  transform: scale(1.1);
+}
+ 
+header .list-item{
+  display: flex;
+  margin: auto 0;
+  padding-left: 2rem;
+}
+
+header .list-item .item{
+  display: flex;
+  margin: 0 1rem;
+}
+
+header .list-item .item:last-child{
+  margin-right: 0;
+}
+
+header .list-item .item a{
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+}
+
+header .list-item .cart a{
+  position: relative;
+}
+
+header .list-item .cart a span{
+  width: 2.6rem;
+  height: 2.6rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 2;
+  border-radius: 5rem;
+  color: #fff;
+  background-color: #ff1616;
+  position: absolute;
+  top: -1.2rem;
+  left: -1.8rem;
+  z-index: 999999;
+}
+
+header .list-item .item a ion-icon{
+  font-size: 2.4rem;
+  margin-right: .5rem;
+}
+
+header .search{
+  position: relative;
+  flex: 1;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+header .search .t-search{
+  width: 100%;
+  color: #333;
+  font-size: 1.6rem;
+  background-color: #eee;
+  padding: 1.4rem;
+  padding-left: 5rem;
+  box-sizing: border-box;
+}
+
+header .search .t-search::placeholder{
+  color: #666;
+}
+
+header .search .sm-search{
+  color: #333;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 1.5rem;
+  background-color: transparent;
+}
+
+header .search .sm-search ion-icon{
+  font-size: 2.4rem;
+  color: #333;
+  transform: scaleX(-1);
+}
+
+nav{
+  max-width: 120rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: calc(4.6rem + 1.6rem);
+}
+
+nav .list-item{
+  display: flex;
+  height: 100%;
+}
+
+nav .list-item .item a{
+  display: block;
+  height: 100%;
+  font-size: 1.8rem;
+  line-height: 6rem;
+  color: #fff !important;
+  padding: 0 2rem;
+}
+
+nav .list-item .item a:hover{
+  background-color: #ff1616;
+}
